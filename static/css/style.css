@@ -1,0 +1,152 @@
+.chat-container {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border-radius: 18px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #dcf8c6;
+    margin-left: auto;
+    border-bottom-right-radius: 5px;
+}
+
+.system-message {
+    background-color: #e5e5ea;
+    border-bottom-left-radius: 5px;
+}
+
+.error-message {
+    background-color: #ffebee;
+    border-left: 4px solid #f44336;
+    color: #d32f2f;
+}
+
+.loading-message {
+    background-color: #e3f2fd;
+    border-left: 4px solid #2196f3;
+    color: #0d47a1;
+    animation: pulse 1.5s infinite;
+}
+
+/* 設置面板樣式 */
+.settings-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+#voice-input {
+    min-width: 100px;
+}
+
+.recording {
+    animation: pulse 1.5s infinite;
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+    }
+}
+
+.settings-panel {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.settings-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.settings-header h4 {
+    margin: 0;
+}
+
+.settings-header button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.settings-body {
+    padding: 15px;
+}
+
+.setting-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.setting-item label {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.setting-item input[type="range"] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.setting-item span {
+    width: 30px;
+    text-align: right;
+}
+
+.settings-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
