@@ -1,0 +1,45 @@
+# Python 相關
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虛擬環境
+venv/
+ENV/
+env/
+
+# IDE 相關
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 環境變數檔案
+.env
+
+# 臨時檔案
+*.webm
+*.mp3
+*.wav
+temp_*
+
+# 靜態生成的語音檔案（如果有需要保留則移除此項）
+# static/response.mp3
